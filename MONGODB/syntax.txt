@@ -1,0 +1,22 @@
+show dbs
+show collections
+db.dropDatabase()
+
+//create 
+db.users.insertOne({name:"Giri"})
+db.users.insertMany([{age:20},{age:22}])
+
+// read 
+db.users.find()
+db.users.find({name:"Giri"})
+db.users.findOne({name:"Giri"})
+db.users.countDocument({name:"Giri"})
+
+//update
+db.users.updateOne({age:20},{set:{age:30}})
+
+//delete
+ds,users.deleteOne({age:20})
+
+db.users.find({name:{$ne:"Giri"}})
+db.users.find({age:{$gt:12}})  //gt gte lt lte
