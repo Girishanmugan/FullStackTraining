@@ -11,7 +11,7 @@ mongoose.connect("mongodb+srv://harikarthikvajravel12_db_user:harikarthik123@clu
 .catch(err => console.log(err));
 
 
-const Food = require('./models/Food');
+const Food = require('./MODELS/Food');
 
 //sample test
 app.get('/', (req, res) => {
